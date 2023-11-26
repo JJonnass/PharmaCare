@@ -50,16 +50,12 @@ const MedicineListScreen = () => {
 
     const handleDelete = (id) => {
         const medicinesRef = ref(databaseMedicineListScreen, `medicines/${id}`);
-
-        // Remove the medicine from the database
         remove(medicinesRef).catch((error) => {
             console.error("Error deleting medicine from the database:", error);
         });
     };
     const handleEdit = (item) => {
-        // Ensure that item is defined before navigating
         if (item) {
-            // Navigate to the EditScreen with the corresponding ID
             navigation.navigate('EDIT SCHEDULE', { item });
         }
     };
