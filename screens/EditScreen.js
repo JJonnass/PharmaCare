@@ -93,22 +93,21 @@ export default function EditScreen({ navigation, route }) {
             .then(() => {
                 // Update successful
                 console.log('Data updated successfully');
-                // Optionally, you can navigate back to the previous screen or perform any other actions
             })
             .catch((error) => {
                 // Handle the error
                 console.error('Error updating data:', error);
             });
 
-        schedulePushNotification(
+        schedulePushNotification({
             medicineName,
             amount,
             medicineUnits,
-            formattedStartDate,
+            startDate: formattedStartDate,
             duration,
             frequency,
-            formattedSelectedTime
-        );
+            selectedTime: formattedSelectedTime
+        });
 
         setMedicineName('');
         setAmount('');
