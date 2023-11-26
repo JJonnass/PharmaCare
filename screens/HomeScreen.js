@@ -137,7 +137,6 @@ export default function HomeScreen() {
 
     useFocusEffect(
         React.useCallback(() => {
-            // Reset the selectedDate to the current date when the screen comes into focus
             setSelectedDate(new Date());
         }, [])
     );
