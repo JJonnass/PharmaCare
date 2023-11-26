@@ -97,10 +97,10 @@ function calculateTimeDifference(startDate, selectedTime) {
     const timeDifferenceInMilliseconds = scheduledTime - now;
 
     if (timeDifferenceInMilliseconds <= 0) {
-        // Scheduled time is in the past
+        
         return null;
     }
-    // Convert milliseconds to seconds
+    
     return Math.floor(timeDifferenceInMilliseconds / 1000);
 }
 
