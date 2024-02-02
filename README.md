@@ -12,4 +12,4 @@ Pharmacare is a mobile application designed to help users manage their medicatio
 - React Native: A framework for building mobile applications using React and JavaScript.
 - Firebase: A mobile and web application development platform.
 - React Navigation: A popular library for navigation in React Native applications.
-- Firebase Realtime Database: A cloud-hosted NoSQL database by Firebase.
+- Firebase Realtime Database: A cloud-hosted NoSQL database by Firebase....
